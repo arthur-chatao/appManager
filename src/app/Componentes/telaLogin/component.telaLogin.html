@@ -1,13 +1,37 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      
+	  <ion-icon name="at" > </ion-icon>			
+      TELA DE LOGIN
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  
+  <ion-card>
+	<ion-card-header>
+		<ion-card-title> Login </ion-card-title>
+			
+	</ion-card-header>
+	<ion-card-content>
+		Email ou Usuario:
+		<ion-input [(ngModel)] = 'nomeUser'> </ion-input>
+		<br>
+		Senha:
+		<ion-input [(ngModel)] = 'senhaUser' type = "password" > </ion-input>
+		<br>
+		<ion-button href = 'projUser'> Entrar </ion-button>  
+	</ion-card-content>
+  </ion-card>
+  <br>
+  <ion-card>
+  	<ion-card-header>
+		<ion-card-title> Não é Cadastrado? Não perca Tempo: </ion-card-title>
+  	</ion-card-header>
+  	<ion-card-content>
+		<ion-button href = 'cadUser'> Cadastre-se </ion-button>
+  	</ion-card-content>
+  </ion-card>
 </ion-content>
 
 <ion-footer>
