@@ -1,5 +1,7 @@
 {
   "name": "appManager",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
