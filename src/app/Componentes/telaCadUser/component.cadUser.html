@@ -23,15 +23,15 @@
 	</ion-card-header>
 	
 	<ion-card-content>
-		<ion-card-subtitle> Ddaos Pessoais: </ion-card-subtitle>
+		<ion-card-subtitle> Dados Pessoais: </ion-card-subtitle>
 		<br>
-		Nome: <ion-input   [(ngModel)] = 'newName'> </ion-input>
+		Nome: <ion-input  placeholder= " example: Mario "  [(ngModel)] = 'newName'> </ion-input>
 		<br>
-		Sobrenome: <ion-input    [(ngModel)] = 'newSobrenome'> </ion-input>
+		Sobrenome: <ion-input placeholder= " example: Silva "   [(ngModel)] = 'newSobrenome'> </ion-input>
 		<br>
-		CPF(Apenas Numeros): <ion-input    [(ngModel)] = 'newCPF'> </ion-input>
+		CPF(Apenas Numeros): <ion-input  placeholder= " example: 10650701950"  [(ngModel)] = 'newCPF'> </ion-input>
 		<br>
-		R.A(Nº de Matricula): <ion-input     [(ngModel)] = 'newRA'> </ion-input>
+		R.A(Nº de Matricula): <ion-input  placeholder= " example: 20173007210 "   [(ngModel)] = 'newRA'> </ion-input>
 		<br>
 		<ion-list>
 			<ion-item>
@@ -64,7 +64,31 @@
 	</ion-card-content>
   
 	</ion-card>
-	<br>
+	
+	
+	<ion-card color="dark">
+		<ion-card-header>
+			<ion-card-title>
+				Dados de Conta
+			</ion-card-title>
+		</ion-card-header>
+		
+		<ion-card-content>
+			Email: 
+			<ion-input  placeholder= " example: exmple@email.com"  [(ngModel)] = 'newEmail'> </ion-input>
+			User Name:
+			<ion-input  placeholder= " example: nome.122 "  [(ngModel)] = 'newApelido'> </ion-input>
+			Senha:
+			<ion-input    type = "password" [(ngModel)] = 'newSenha'> </ion-input>
+			Confirmar Senha:
+			<ion-input    type = "password" [(ngModel)] = 'ConfirSenha'> </ion-input>
+			<br>
+			<ion-button expand="full" color="success" href="cadOK"> CADASTRAR </ion-button>
+						
+		</ion-card-content>
+		
+	
+	</ion-card>
 
 </ion-content>
 
