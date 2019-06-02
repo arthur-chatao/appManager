@@ -8,6 +8,10 @@ import { ComponenteDiario } from './Componentes/telaDiario/component.diario';
 import { ComponenteLogin } from './Componentes/telaLogin/component.telaLogin';
 import { ComponenteManUser } from './Componentes/telaManUser/component.manUser';
 import { ComponenteProjUser } from './Componentes/telaProjUser/component.projUser';
+import { ComponenteCadConfirm } from './Componentes/telaCadConfir/component.cadConfirm';
+import { ComponenteVisual } from './Componentes/telaVisual/component.visual';
+
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -19,6 +23,8 @@ const routes: Routes = [
   { path: 'diario', component:  ComponenteDiario },
   { path: 'confirma', component: ComponenteConfirmar },	
   { path: 'verificar', component: ComponenteManUser},
+  { path: 'cadOK', component: ComponenteCadConfirm },
+  { path: 'gerar', component: ComponenteVisual}
 ];
 
 @NgModule({
