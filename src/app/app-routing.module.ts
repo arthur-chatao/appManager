@@ -6,7 +6,6 @@ import { ComponenteCadUser } from './Componentes/telaCadUser/component.cadUser';
 import { ComponenteConfirmar } from './Componentes/telaConfirm/component.confirm';
 import { ComponenteDiario } from './Componentes/telaDiario/component.diario';
 import { ComponenteLogin } from './Componentes/telaLogin/component.telaLogin';
-import { ComponenteManUser } from './Componentes/telaManUser/component.manUser';
 import { ComponenteProjUser } from './Componentes/telaProjUser/component.projUser';
 import { ComponenteCadConfirm } from './Componentes/telaCadConfir/component.cadConfirm';
 import { ComponenteVisual } from './Componentes/telaVisual/component.visual';
@@ -20,17 +19,16 @@ const routes: Routes = [
   { path: 'projUser', component: ComponenteProjUser },
   { path: 'cadUser', component: ComponenteCadUser },
   { path: 'cadProj', component: ComponenteCadProj },
-  { path: 'diario', component:  ComponenteDiario },
-  { path: 'confirma', component: ComponenteConfirmar },	
-  { path: 'verificar', component: ComponenteManUser},
+  { path: 'diario', component: ComponenteDiario },
+  { path: 'confirma', component: ComponenteConfirmar },
   { path: 'cadOK', component: ComponenteCadConfirm },
-  { path: 'gerar', component: ComponenteVisual}
+  { path: 'gerar', component: ComponenteVisual }
 ];
 
 @NgModule({
 
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 
 
 })

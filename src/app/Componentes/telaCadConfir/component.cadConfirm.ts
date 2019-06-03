@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: 'component.cadConfirm.html'
 })
 
-export class ComponenteCadConfirm{
-  
+export class ComponenteCadConfirm {
 
-  
+
+
 
 }

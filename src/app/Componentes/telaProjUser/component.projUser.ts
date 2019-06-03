@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: 'component.projUser.html'
 })
 
-export class ComponenteProjUser{
-  
+export class ComponenteProjUser {
+
 
 }

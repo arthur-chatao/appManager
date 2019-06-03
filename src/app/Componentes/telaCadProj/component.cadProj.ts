@@ -5,12 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: 'component.cadProj.html'
 })
 
-export class ComponenteCadProj{
-  newProj : string = "";
-  responsavelName : string = "";
-  duration : number;
-  thoras : number;
-  shoras : number;
-  
+export class ComponenteCadProj {
+  newProj: string = "";
+  responsavelName: string = "";
+  duration: number;
+  thoras: number;
+  shoras: number;
+
 
 }

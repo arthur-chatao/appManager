@@ -2,93 +2,93 @@
   <ion-toolbar>
     <ion-title>
       <ion-icon name="contact"> </ion-icon>
-		Cadastro de Usuario
+      Cadastro de Usuario
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content> 
-  
-	<ion-card color="danger">
-  		<ion-card-header>
-  			<p>OBS: O app é ainda está voltado para quem é estudante da instituição IFPR-PARANAVAÍ </p> 
-		</ion-card-header>
-		<ion-card-content>
-		</ion-card-content>
-  	</ion-card>	
+<ion-content>
+
+  <ion-card color="danger">
+    <ion-card-header>
+      <p>OBS: O app é ainda está voltado para quem é estudante da instituição IFPR-PARANAVAÍ </p>
+    </ion-card-header>
+    <ion-card-content>
+    </ion-card-content>
+  </ion-card>
 
   <ion-card color="tertiary">
-	<ion-card-header>
-		<ion-card-title> Novo Usuario: </ion-card-title>
-	</ion-card-header>
-	
-	<ion-card-content>
-		<ion-card-subtitle> Dados Pessoais: </ion-card-subtitle>
-		<br>
-		Nome: <ion-input  placeholder= " example: Mario "  [(ngModel)] = 'newName'> </ion-input>
-		<br>
-		Sobrenome: <ion-input placeholder= " example: Silva "   [(ngModel)] = 'newSobrenome'> </ion-input>
-		<br>
-		CPF(Apenas Numeros): <ion-input  placeholder= " example: 10650701950"  [(ngModel)] = 'newCPF'> </ion-input>
-		<br>
-		R.A(Nº de Matricula): <ion-input  placeholder= " example: 20173007210 "   [(ngModel)] = 'newRA'> </ion-input>
-		<br>
-		<ion-list>
-			<ion-item>
-				<ion-label> Curso: </ion-label>
-				<ion-select placeholder="Selecione seu Curso">
-					<ion-select-option value="info"> Informatica </ion-select-option>
-					<ion-select-option value="agro"> AgroIndustria </ion-select-option>	
-					<ion-select-option value="meca"> Mecatronica/Eletro </ion-select-option>
-					<ion-select-option value="tads"> Tads </ion-select-option>
-					<ion-select-option value="eletrica"> Eng. Elétrica </ion-select-option>	
-					<ion-select-option value="software"> Eng. Software </ion-select-option>
-					<ion-select-option value="quimica"> Quimica </ion-select-option>
-				</ion-select>
-			</ion-item>
-		</ion-list>
-		<br>
-		<ion-list>
-			<ion-item>
-				<ion-label> Ano que está Cursando: </ion-label>
-				<ion-select placeholder="Selecione seu Ano">
-					<ion-select-option value="1"> 1° </ion-select-option>
-					<ion-select-option value="2"> 2° </ion-select-option>	
-					<ion-select-option value="3"> 3° </ion-select-option>
-					<ion-select-option value="4"> 4° </ion-select-option>
-				</ion-select>
-			</ion-item>
-		</ion-list>
-				
-		
-	</ion-card-content>
-  
-	</ion-card>
-	
-	
-	<ion-card color="dark">
-		<ion-card-header>
-			<ion-card-title>
-				Dados de Conta
-			</ion-card-title>
-		</ion-card-header>
-		
-		<ion-card-content>
-			Email: 
-			<ion-input  placeholder= " example: exmple@email.com"  [(ngModel)] = 'newEmail'> </ion-input>
-			User Name:
-			<ion-input  placeholder= " example: nome.122 "  [(ngModel)] = 'newApelido'> </ion-input>
-			Senha:
-			<ion-input    type = "password" [(ngModel)] = 'newSenha'> </ion-input>
-			Confirmar Senha:
-			<ion-input    type = "password" [(ngModel)] = 'ConfirSenha'> </ion-input>
-			<br>
-			<ion-button expand="full" color="success" href="cadOK"> CADASTRAR </ion-button>
-						
-		</ion-card-content>
-		
-	
-	</ion-card>
+    <ion-card-header>
+      <ion-card-title> Novo Usuario: </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-card-subtitle> Dados Pessoais: </ion-card-subtitle>
+      <br>
+      Nome: <ion-input placeholder=" example: Mario " [(ngModel)]='newName'> </ion-input>
+      <br>
+      Sobrenome: <ion-input placeholder=" example: Silva " [(ngModel)]='newSobrenome'> </ion-input>
+      <br>
+      CPF(Apenas Numeros): <ion-input placeholder=" example: 10650701950" [(ngModel)]='newCPF'> </ion-input>
+      <br>
+      R.A(Nº de Matricula): <ion-input placeholder=" example: 20173007210 " [(ngModel)]='newRA'> </ion-input>
+      <br>
+      <ion-list>
+        <ion-item>
+          <ion-label> Curso: </ion-label>
+          <ion-select placeholder="Selecione seu Curso">
+            <ion-select-option value="info"> Informatica </ion-select-option>
+            <ion-select-option value="agro"> AgroIndustria </ion-select-option>
+            <ion-select-option value="meca"> Mecatronica/Eletro </ion-select-option>
+            <ion-select-option value="tads"> Tads </ion-select-option>
+            <ion-select-option value="eletrica"> Eng. Elétrica </ion-select-option>
+            <ion-select-option value="software"> Eng. Software </ion-select-option>
+            <ion-select-option value="quimica"> Quimica </ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <br>
+      <ion-list>
+        <ion-item>
+          <ion-label> Ano que está Cursando: </ion-label>
+          <ion-select placeholder="Selecione seu Ano">
+            <ion-select-option value="1"> 1° </ion-select-option>
+            <ion-select-option value="2"> 2° </ion-select-option>
+            <ion-select-option value="3"> 3° </ion-select-option>
+            <ion-select-option value="4"> 4° </ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title>
+        Dados de Conta
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Email:
+      <ion-input placeholder=" example: exmple@email.com" [(ngModel)]='newEmail'> </ion-input>
+      User Name:
+      <ion-input placeholder=" example: nome.122 " [(ngModel)]='newApelido'> </ion-input>
+      Senha:
+      <ion-input type="password" [(ngModel)]='newSenha'> </ion-input>
+      Confirmar Senha:
+      <ion-input type="password" [(ngModel)]='ConfirSenha'> </ion-input>
+      <br>
+      <ion-button expand="full" color="success" href="cadOK"> CADASTRAR </ion-button>
+
+    </ion-card-content>
+
+
+  </ion-card>
 
 </ion-content>
 

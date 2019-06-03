@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: 'component.confirm.html'
 })
 
-export class ComponenteConfirmar{
-  
+export class ComponenteConfirmar {
+
 }

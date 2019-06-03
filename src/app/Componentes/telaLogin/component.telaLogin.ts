@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: 'component.telaLogin.html'
 })
 
-export class ComponenteLogin{
-  nomeUser: string = " " ;
-  senhaUser: string = " " ;
-  
+export class ComponenteLogin {
+  nomeUser: string = " ";
+  senhaUser: string = " ";
+
 }

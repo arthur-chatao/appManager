@@ -5,14 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: 'component.cadUser.html'
 })
 
-export class ComponenteCadUser{
-  newName :  string = "";
-  newSobrenome :  string = "";	
-  newCPF :  string = "";
-  newRA :  string = "";
-  newEmail :  string = "";
-  newApelido :  string = "";
-  newSenha :  string = "";
-  ConfirSenha :  string = "";
-  	
+export class ComponenteCadUser {
+  newName: string = "";
+  newSobrenome: string = "";
+  newCPF: string = "";
+  newRA: string = "";
+  newEmail: string = "";
+  newApelido: string = "";
+  newSenha: string = "";
+  ConfirSenha: string = "";
+
 }

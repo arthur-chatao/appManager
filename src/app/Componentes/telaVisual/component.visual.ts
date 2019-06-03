@@ -5,16 +5,16 @@ import { Component } from '@angular/core';
   templateUrl: 'component.visual.html'
 })
 
-export class ComponenteVisual{
+export class ComponenteVisual {
 
-	clicarSingle() :  void {
-		alert("O download foi Iniciado");
-	
-	}
-	
-	clicarGeral() : void {
-		alert("O download do Relatorio final foi Iniciado");
-	
-	}
-  
+  clicarSingle(): void {
+    alert("O download foi Iniciado");
+
+  }
+
+  clicarGeral(): void {
+    alert("O download do Relatorio final foi Iniciado");
+
+  }
+
 }

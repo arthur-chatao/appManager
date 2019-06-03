@@ -19,7 +19,7 @@ import { ComponenteCadConfirm } from './Componentes/telaCadConfir/component.cadC
 import { ComponenteVisual } from './Componentes/telaVisual/component.visual';
 
 
-import { ComponenteManUser } from './Componentes/telaManUser/component.manUser';
+
 import { ComponenteProjUser } from './Componentes/telaProjUser/component.projUser';
 
 
@@ -27,8 +27,8 @@ import { ComponenteProjUser } from './Componentes/telaProjUser/component.projUse
 
 
 @NgModule({
-  declarations: [AppComponent, ComponenteLogin, ComponenteCadProj,  ComponenteCadUser, ComponenteConfirmar, ComponenteDiario, 
-	ComponenteManUser, ComponenteProjUser, ComponenteCadConfirm, ComponenteVisual ],
+  declarations: [AppComponent, ComponenteLogin, ComponenteCadProj, ComponenteCadUser, ComponenteConfirmar, ComponenteDiario,
+    ComponenteProjUser, ComponenteCadConfirm, ComponenteVisual],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule],
   providers: [
@@ -38,4 +38,4 @@ import { ComponenteProjUser } from './Componentes/telaProjUser/component.projUse
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
