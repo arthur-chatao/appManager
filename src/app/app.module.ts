@@ -10,17 +10,18 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ComponenteLogin } from './Componentes/telaLogin/component.telaLogin';
-import { ComponenteCadProj } from './Componentes/telaCadProj/component.cadProj';
-import { ComponenteCadUser } from './Componentes/telaCadUser/component.cadUser';
-import { ComponenteConfirmar } from './Componentes/telaConfirm/component.confirm';
-import { ComponenteDiario } from './Componentes/telaDiario/component.diario';
-import { ComponenteCadConfirm } from './Componentes/telaCadConfir/component.cadConfirm';
-import { ComponenteVisual } from './Componentes/telaVisual/component.visual';
+import { ComponenteCadProj } from './projeto/telaCadProj/component.cadProj';
+import { ComponenteCadUser } from './usuario/telaCadUser/component.cadUser';
+import { ComponenteConfirmar } from './diario/telaConfirm/component.confirm';
+import { ComponenteDiario } from './diario/telaDiario/component.diario';
+import { ComponenteLogin } from './usuario/telaLogin/component.telaLogin';
+import { ComponenteProjUser } from './projeto/telaProjUser/component.projUser';
+import { ComponenteCadConfirm } from './usuario/telaCadConfir/component.cadConfirm';
+import { ComponenteVisual } from './diario/telaVisual/component.visual';
 
 
 
-import { ComponenteProjUser } from './Componentes/telaProjUser/component.projUser';
+
 
 
 
