@@ -14,9 +14,9 @@
     </ion-card-header>
     <ion-card-content>
       Nome do Projeto:
-      <ion-input placeholder=" example: Nome do Projeto " [(ngModel)]='newProj'> </ion-input>
+      <ion-input placeholder=" example: Nome do Projeto " [(ngModel)]='projeto.newProj'> </ion-input>
       Responssvel do Projeto:
-      <ion-input placeholder=" example:User do prof em nosso app " [(ngModel)]='responsavelName'> </ion-input>
+      <ion-input placeholder=" example:User do prof em nosso app " [(ngModel)]='projeto.responsavelName'> </ion-input>
       <ion-list>
         <ion-item>
           <ion-label> Tipo de Projeto: </ion-label>
@@ -30,16 +30,16 @@
       </ion-list>
       <br>
       Tempo de Duraçao em Dias(exemplo 1 ano = 365):
-      <ion-input placeholder=" Informe a duraçao em dias " [(ngModel)]='duration'> </ion-input>
+      <ion-input placeholder=" Informe a duraçao em dias " [(ngModel)]='projeto.duration'> </ion-input>
       Quantidade Total de Horas:
-      <ion-input placeholder=" Informe a duraçao total em horas " [(ngModel)]='thoras'> </ion-input>
+      <ion-input placeholder=" Informe a duraçao total em horas " [(ngModel)]='projeto.thoras'> </ion-input>
       Horas Semanais:
-      <ion-input placeholder=" Informe a quantidade de Horas semanais " [(ngModel)]='shoras'> </ion-input>
+      <ion-input placeholder=" Informe a quantidade de Horas semanais " [(ngModel)]='projeto.shoras'> </ion-input>
       <br>
 
       <ion-item>
         <ion-label position="floating">Descriçao do Projeto</ion-label>
-        <ion-textarea placeholder="Entre com a Descriç~ao do Projeto"></ion-textarea>
+        <ion-textarea [(ngModel)]='projeto.descriProj' placeholder="Entre com a Descriçao do Projeto"></ion-textarea>
       </ion-item>
       <br>
       <ion-button expand="full" color="dark" href="projUser"> Confirmar Projeto </ion-button>

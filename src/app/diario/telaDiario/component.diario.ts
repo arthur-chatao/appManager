@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Diario } from '../entidade/diario';
 
 
 @Component({
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class ComponenteDiario {
-
+diario : Diario = new Diario();
 }

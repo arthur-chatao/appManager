@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Usuario } from '../entidade/usuario';
 
 @Component({
   selector: 'component.cadUser',
@@ -6,13 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class ComponenteCadUser {
-  newName: string = "";
-  newSobrenome: string = "";
-  newCPF: string = "";
-  newRA: string = "";
-  newEmail: string = "";
-  newApelido: string = "";
-  newSenha: string = "";
-  ConfirSenha: string = "";
+ usuario: Usuario = new Usuario();
 
 }
