@@ -19,15 +19,18 @@ import { ProjetoSalvarComponent } from './projeto/projeto-salvar/projeto-salvar.
 import { ComponenteConfirmar } from './diario/telaConfirm/component.confirm';
 import { DiarioSalvarComponent } from './diario/diario-salvar/diario-salvar.component';
 import { ComponenteLogin } from './usuario/telaLogin/component.telaLogin';
-import { ComponenteProjUser } from './projeto/telaProjUser/component.projUser';
+
 import { ComponenteCadConfirm } from './usuario/telaCadConfir/component.cadConfirm';
-import { ComponenteVisual } from './diario/telaVisual/component.visual';
+
 import { UsuarioSalvarComponent } from './usuario/usuario-salvar/usuario-salvar.component';
+import { ProjetoListarComponent } from './projeto/projeto-listar/projeto-listar.component';
+import { DiarioListarComponent } from './diario/diario-listar/diario-listar.component';
+
 
 
 @NgModule({
   declarations: [AppComponent, ComponenteLogin, ProjetoSalvarComponent, UsuarioSalvarComponent, ComponenteConfirmar, DiarioSalvarComponent,
-    ComponenteProjUser, ComponenteCadConfirm, ComponenteVisual],
+     ComponenteCadConfirm,  ProjetoListarComponent, DiarioListarComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, AngularFireModule.initializeApp({
     apiKey: "AIzaSyBzxbzeMlriRJceekUkCIge7mKkGDvVBkE",
