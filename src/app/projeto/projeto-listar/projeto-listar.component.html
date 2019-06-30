@@ -9,16 +9,25 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let projeto of listaProjetos | async">
+  <ion-card color="primary" *ngFor="let projeto of listaProjetos | async">
   <ion-card-content>
     <ion-item>
-    <ion-list>
-      <ion-label>{{ projeto.newProj }}</ion-label>
-      <ion-label>{{ projeto.responsavelName }}</ion-label>
-      <ion-label>{{ projeto.descriProj }}</ion-label>
-      <ion-label>{{ projeto.descriProj }}</ion-label>
-      </ion-list>
+    	<ion-list>
+      		<ion-label><b>{{ projeto.newProj }}</b></ion-label>
+     	</ion-list>
+     </ion-item>
+     
+     <ion-item>
+     	<ion-list>
+     		 <ion-label>Responsavel:<br><u>{{ projeto.responsavelName }}</u></ion-label>
+     	</ion-list>
       </ion-item>
+      <ion-item>
+     	<ion-list>
+     		 <ion-label>Duração:<br><u> {{ projeto.duration }} meses</u></ion-label>
+      	</ion-list>
+      </ion-item>
+      Descrição do Projeto: <b>{{ projeto.descriProj }}</b>
 
       <br>
       <ion-button color="light" href='diario'> Acessar </ion-button>

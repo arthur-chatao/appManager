@@ -7,43 +7,23 @@
 </ion-header>
 
 <ion-content>
-	<ion-card color="primary">
+	<ion-card color="primary" *ngFor="let diario of listaDiario | async">
 		<ion-card-header>
-			<ion-card-title> Diario do Dia 29/05/2019 </ion-card-title>
+			<ion-card-title> Diario do Dia XX/XX/XXXX </ion-card-title>
 		</ion-card-header>
 		<ion-card-content>
 			<b> Informaçoes: </b>
 			<br>
-			<b> Quantidade de Horas: X </b>
+			<b> Quantidade de Trabalhadas: X </b>
 			<br>
-			<b> Quantidade de Horas Restantes: X </b>
-			<br>
-			<b> Diario do dia: Estudo sobre Pombos que voam fazendo Drift </b>
+			<b> Diario do dia:</b> <u> {{ diario.descricaoDia }}</u>
 			<br>
 			<ion-button color="danger" (click)='clicarSingle()'>
 				<ion-icon name="arrow-round-down"></ion-icon> Baixar Relatorio
 			</ion-button>
 		</ion-card-content>
 	</ion-card>
-	<ion-card color="secondary">
-		<ion-card-header>
-			<ion-card-title> Diario do Dia 01/06/2019 </ion-card-title>
-		</ion-card-header>
-		<ion-card-content>
-			<b> Informaçoes: </b>
-			<br>
-			<b> Quantidade de Horas: X </b>
-			<br>
-			<b> Quantidade de Horas Restantes: X </b>
-			<br>
-			<b> Diario do dia: Estudo sobre Pombos que voam fazendo Raxa </b>
-			<br>
-			<ion-button color="danger" (click)='clicarSingle()'>
-				<ion-icon name="arrow-round-down"></ion-icon> Baixar Relatorio
-			</ion-button>
-
-		</ion-card-content>
-	</ion-card>
+	<br>	
 	<ion-card color="dark">
 		<ion-card-content>
 			<br>
@@ -53,6 +33,10 @@
 			<br>
 		</ion-card-content>
 	</ion-card>
+	
+	<br>
+	
+	
 	<ion-button color="danger" (click)='clicarGeral()'>
 		<ion-icon name="arrow-round-down"></ion-icon> Baixar Relatorio Final
 	</ion-button>
