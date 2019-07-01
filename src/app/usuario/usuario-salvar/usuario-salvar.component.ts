@@ -8,13 +8,13 @@ import { AngularFireDatabase } from '@angular/fire/database';
   styleUrls: ['./usuario-salvar.component.scss'],
 })
 export class UsuarioSalvarComponent implements OnInit {
-  usuario: Usuario = new Usuario();	
-	
+  usuario: Usuario = new Usuario();
+
   constructor(private banco: AngularFireDatabase) { }
 
-  ngOnInit() {}
-  
-  salvar(){
+  ngOnInit() { }
+
+  salvar() {
     this.banco.list('usuario').push(this.usuario);
     this.usuario = new Usuario();
     alert("Salvo");

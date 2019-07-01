@@ -10,22 +10,22 @@
 
 <ion-content>
   <ion-card color="primary" *ngFor="let projeto of listaProjetos | async">
-  <ion-card-content>
-    <ion-item>
-    	<ion-list>
-      		<ion-label><b>{{ projeto.newProj }}</b></ion-label>
-     	</ion-list>
-     </ion-item>
-     
-     <ion-item>
-     	<ion-list>
-     		 <ion-label>Responsavel:<br><u>{{ projeto.responsavelName }}</u></ion-label>
-     	</ion-list>
+    <ion-card-content>
+      <ion-item>
+        <ion-list>
+          <ion-label><b>{{ projeto.newProj }}</b></ion-label>
+        </ion-list>
+      </ion-item>
+
+      <ion-item>
+        <ion-list>
+          <ion-label>Responsavel:<br><u>{{ projeto.responsavelName }}</u></ion-label>
+        </ion-list>
       </ion-item>
       <ion-item>
-     	<ion-list>
-     		 <ion-label>Duração:<br><u> {{ projeto.duration }} meses</u></ion-label>
-      	</ion-list>
+        <ion-list>
+          <ion-label>Duração:<br><u> {{ projeto.duration }} meses</u></ion-label>
+        </ion-list>
       </ion-item>
       Descrição do Projeto: <b>{{ projeto.descriProj }}</b>
 

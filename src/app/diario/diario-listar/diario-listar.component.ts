@@ -22,14 +22,14 @@ export class DiarioListarComponent implements OnInit {
 
   }
 
-  ngOnInit() {}
-  
-  clicarSingle(){
-  	alert("Baixando Diario do Dia!!");
+  ngOnInit() { }
+
+  clicarSingle() {
+    alert("Baixando Diario do Dia!!");
   }
-  
-  clicarGeral(){
-   alert("Gerando, e baixando o Diario Final!!");
+
+  clicarGeral() {
+    alert("Gerando, e baixando o Diario Final!!");
   }
 
 }

@@ -8,13 +8,13 @@ import { AngularFireDatabase } from '@angular/fire/database';
   styleUrls: ['./diario-salvar.component.scss'],
 })
 export class DiarioSalvarComponent implements OnInit {
-  diario : Diario = new Diario();
-  
+  diario: Diario = new Diario();
+
   constructor(private banco: AngularFireDatabase) { }
-  
-  ngOnInit() {}
-  
-  diarioSalvar(){
+
+  ngOnInit() { }
+
+  diarioSalvar() {
     this.banco.list('diario').push(this.diario);
     this.diario = new Diario();
     alert("Diario Salvo");

@@ -8,14 +8,14 @@ import { AngularFireDatabase } from '@angular/fire/database';
   styleUrls: ['./projeto-salvar.component.scss'],
 })
 export class ProjetoSalvarComponent implements OnInit {
-  projeto : Projeto = new Projeto();
+  projeto: Projeto = new Projeto();
   constructor(private banco: AngularFireDatabase) { }
 
-  
 
-  ngOnInit() {}
-  
-  projSalvar(){
+
+  ngOnInit() { }
+
+  projSalvar() {
     this.banco.list('projeto').push(this.projeto);
     this.projeto = new Projeto();
     alert("Salvo Com sucesso");

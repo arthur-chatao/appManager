@@ -30,7 +30,7 @@ import { DiarioListarComponent } from './diario/diario-listar/diario-listar.comp
 
 @NgModule({
   declarations: [AppComponent, ComponenteLogin, ProjetoSalvarComponent, UsuarioSalvarComponent, ComponenteConfirmar, DiarioSalvarComponent,
-     ComponenteCadConfirm,  ProjetoListarComponent, DiarioListarComponent],
+    ComponenteCadConfirm, ProjetoListarComponent, DiarioListarComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, AngularFireModule.initializeApp({
     apiKey: "AIzaSyBzxbzeMlriRJceekUkCIge7mKkGDvVBkE",

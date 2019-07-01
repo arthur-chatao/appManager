@@ -21,6 +21,6 @@ export class ProjetoListarComponent implements OnInit {
 
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
 }
