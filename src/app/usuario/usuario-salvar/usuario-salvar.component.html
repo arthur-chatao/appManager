@@ -36,7 +36,7 @@
       <ion-list>
         <ion-item>
           <ion-label> Curso: </ion-label>
-          <ion-select  placeholder="Selecione seu Curso">
+          <ion-select  [(ngModel)]="usuario.newCurso" placeholder="Selecione seu Curso">
             <ion-select-option value="info"> Informatica </ion-select-option>
             <ion-select-option value="agro"> AgroIndustria </ion-select-option>
             <ion-select-option value="meca"> Mecatronica/Eletro </ion-select-option>
@@ -51,7 +51,7 @@
       <ion-list>
         <ion-item>
           <ion-label> Ano que está Cursando: </ion-label>
-          <ion-select placeholder="Selecione seu Ano">
+          <ion-select placeholder="Selecione seu Ano" [(ngModel)]="usuario.newAno">
             <ion-select-option value="1"> 1° </ion-select-option>
             <ion-select-option value="2"> 2° </ion-select-option>
             <ion-select-option value="3"> 3° </ion-select-option>
@@ -75,15 +75,11 @@
 
     <ion-card-content>
       Email:
-      <ion-input placeholder=" example: exmple@email.com" [(ngModel)]='usuario.newEmail'> </ion-input>
-      User Name:
-      <ion-input placeholder=" example: nome.122 " [(ngModel)]='usuario.newApelido'> </ion-input>
+      <ion-input placeholder=" example: exmple@email.com" [(ngModel)]='pessoa.email'> </ion-input>
       Senha:
-      <ion-input type="password" [(ngModel)]='usuario.newSenha'> </ion-input>
-      Confirmar Senha:
-      <ion-input type="password" [(ngModel)]='usuario.ConfirSenha'> </ion-input>
+      <ion-input type="password" [(ngModel)]='pessoa.senha'> </ion-input>
       <br>
-      <ion-button expand="full" color="success" (click)='salvar()' href="cadOK"> CADASTRAR </ion-button>
+      <ion-button expand="full" color="success" (click)='salvar()'> CADASTRAR </ion-button>
 
     </ion-card-content>
 

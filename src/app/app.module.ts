@@ -25,6 +25,7 @@ import { ComponenteCadConfirm } from './usuario/telaCadConfir/component.cadConfi
 import { UsuarioSalvarComponent } from './usuario/usuario-salvar/usuario-salvar.component';
 import { ProjetoListarComponent } from './projeto/projeto-listar/projeto-listar.component';
 import { DiarioListarComponent } from './diario/diario-listar/diario-listar.component';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 
 
@@ -44,6 +45,7 @@ import { DiarioListarComponent } from './diario/diario-listar/diario-listar.comp
   providers: [
     StatusBar,
     SplashScreen,
+    AngularFireAuth,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

@@ -3,6 +3,8 @@ import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable } from 'rxjs';
 import { Projeto } from '../entidade/projeto';
 import { map } from 'rxjs/operators'
+import { AngularFireAuth } from 'angularfire2/auth';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projeto-listar',
@@ -12,7 +14,7 @@ import { map } from 'rxjs/operators'
 export class ProjetoListarComponent implements OnInit {
 
   listaProjetos: Observable<Projeto[]>;
-  constructor(private fire: AngularFireDatabase) {
+  constructor(private fire: AngularFireDatabase,private afAuth: AngularFireAuth, private router: Router ) {
     this.listaProjetos = this.fire.list<Projeto>('projeto').snapshotChanges().pipe(
       map(lista => lista.map(linha => ({
         key: linha.payload.key, ...linha.payload.val()
@@ -22,5 +24,12 @@ export class ProjetoListarComponent implements OnInit {
   }
 
   ngOnInit() { }
+
+  logout() {
+  alert("123");
+    this.afAuth.auth.signOut();
+    alert("passou");
+    this.router.navigate(['home']);
+  }
 
 }

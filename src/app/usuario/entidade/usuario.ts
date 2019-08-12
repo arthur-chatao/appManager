@@ -3,8 +3,6 @@ export class Usuario {
   newSobrenome: string  ;
   newCPF: string  ;
   newRA: string ;
-  newEmail: string ;
-  newApelido: string ;
-  newSenha: string ;
-  ConfirSenha: string ;
+  newCurso: string;
+  newAno: string;
 }
