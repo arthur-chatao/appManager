@@ -37,16 +37,14 @@
         <ion-item>
           <ion-label> Curso: </ion-label>
           <ion-select  [(ngModel)]="usuario.newCurso" placeholder="Selecione seu Curso">
-            <ion-select-option value="info"> Informatica </ion-select-option>
-            <ion-select-option value="agro"> AgroIndustria </ion-select-option>
-            <ion-select-option value="meca"> Mecatronica/Eletro </ion-select-option>
-            <ion-select-option value="tads"> Tads </ion-select-option>
-            <ion-select-option value="eletrica"> Eng. Elétrica </ion-select-option>
-            <ion-select-option value="software"> Eng. Software </ion-select-option>
-            <ion-select-option value="quimica"> Quimica </ion-select-option>
+             <ion-select-option *ngFor='let curso of listaCurso | async' [value]="curso" >
+			{{curso.nome}}
+			</ion-select-option>
           </ion-select>
         </ion-item>
       </ion-list>
+	  <ion-button expand="full" color="success" (click)='curso()'> Criar Curso </ion-button>
+	  <br>
       <br>
       <ion-list>
         <ion-item>

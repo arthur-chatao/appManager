@@ -23,7 +23,8 @@ const routes: Routes = [
   { path: 'confirma', component: ComponenteConfirmar },
   { path: 'cadOK', component: ComponenteCadConfirm },
   { path: 'projL', component: ProjetoListarComponent },
-  { path: 'diariol', component: DiarioListarComponent },
+  { path: 'diariol', component: DiarioListarComponent },  { path: 'curso', loadChildren: './curso/salvar/salvar.module#SalvarPageModule' },
+
 ];
 
 @NgModule({

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Curso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nome do Curso</ion-label>
+    <ion-input name="nome" [(ngModel)]="curso.nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Sigla do Curso</ion-label>
+    <ion-input name="sigla" [(ngModel)]="curso.sigla"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" shape="round" (click)="salvar()">salvar</ion-button>
+</ion-content>

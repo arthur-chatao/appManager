@@ -26,9 +26,9 @@ export class ProjetoListarComponent implements OnInit {
   ngOnInit() { }
 
   logout() {
-  alert("123");
+  
     this.afAuth.auth.signOut();
-    alert("passou");
+  
     this.router.navigate(['home']);
   }
 
