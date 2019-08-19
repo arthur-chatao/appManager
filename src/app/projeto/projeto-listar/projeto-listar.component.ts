@@ -14,6 +14,10 @@ import { Router } from '@angular/router';
 export class ProjetoListarComponent implements OnInit {
 
   listaProjetos: Observable<Projeto[]>;
+
+
+
+
   constructor(private fire: AngularFireDatabase,private afAuth: AngularFireAuth, private router: Router ) {
     this.listaProjetos = this.fire.list<Projeto>('projeto').snapshotChanges().pipe(
       map(lista => lista.map(linha => ({
@@ -26,10 +30,19 @@ export class ProjetoListarComponent implements OnInit {
   ngOnInit() { }
 
   logout() {
-  
+
     this.afAuth.auth.signOut();
-  
+
     this.router.navigate(['home']);
   }
+
+  excluir(chave) {
+
+      this.fire.list('projeto').remove(chave);
+      alert("Excluso Com sucesso");
+
+  }
+
+
 
 }

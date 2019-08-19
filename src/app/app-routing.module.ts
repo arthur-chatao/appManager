@@ -24,6 +24,7 @@ const routes: Routes = [
   { path: 'cadOK', component: ComponenteCadConfirm },
   { path: 'projL', component: ProjetoListarComponent },
   { path: 'diariol', component: DiarioListarComponent },  { path: 'curso', loadChildren: './curso/salvar/salvar.module#SalvarPageModule' },
+  { path: 'redefinir', loadChildren: './usuario/redefinir/redefinir.module#RedefinirPageModule' },
 
 ];
 
