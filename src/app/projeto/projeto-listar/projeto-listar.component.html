@@ -9,7 +9,8 @@
 </ion-header>
 
 <ion-content>
-  <ion-card color="primary" *ngFor="let projeto of listaProjetos | async">
+  <ion-searchbar [(ngModel)]="valor" (ionChange)="filtrar()"></ion-searchbar>
+  <ion-card color="primary" *ngFor="let projeto of listaFiltro ">
     <ion-card-content>
       <ion-item>
         <ion-list>
@@ -29,7 +30,7 @@
       </ion-item>
       Descrição do Projeto: <b>{{ projeto.descriProj }}</b>
       <br>
-    
+
       <br>
       <ion-button color="light" href='diario'> Acessar </ion-button>
       <br>

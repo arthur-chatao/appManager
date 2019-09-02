@@ -5,6 +5,7 @@ import { Projeto } from '../entidade/projeto';
 import { map } from 'rxjs/operators'
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Router } from '@angular/router';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-projeto-listar',
@@ -14,7 +15,10 @@ import { Router } from '@angular/router';
 export class ProjetoListarComponent implements OnInit {
 
   listaProjetos: Observable<Projeto[]>;
-
+  listaFiltro: Projeto[];
+  filtro = {}; //regras ativas do filtro
+  projetos: any;
+  valor: string;
 
 
 
@@ -27,7 +31,17 @@ export class ProjetoListarComponent implements OnInit {
 
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.listaProjetos.subscribe(cidade => {
+        this.projetos = cidade;
+        this.listaFiltro = _.filter(this.projetos, _.conforms(this.filtro));
+    })
+  }
+
+  filtrar(){
+    this.filtro['newProj'] = val => val.includes(this.valor);
+    this.listaFiltro = _.filter(this.projetos, _.conforms(this.filtro));
+  }
 
   logout() {
 
