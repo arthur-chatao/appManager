@@ -9,12 +9,17 @@
 <ion-content>
 	<ion-card color="primary" *ngFor="let diario of listaDiario | async">
 		<ion-card-header>
-			<ion-card-title> Diario do Dia XX/XX/XXXX </ion-card-title>
+			<ion-card-title> Diario {{ diario.dentrada }}</ion-card-title>
 		</ion-card-header>
 		<ion-card-content>
 			<b> Informaçoes: </b>
 			<br>
-			<b> Quantidade de Trabalhadas: X </b>
+			<br>
+			<b>  Horario de Entrada </b> <u> {{ diario.hentrada }}</u>
+			<br>
+			<br>
+			<b>  Horario de Saida </b> <u> {{ diario.saida }}</u>
+			<br>
 			<br>
 			<b> Diario do dia:</b> <u> {{ diario.descricaoDia }}</u>
 			<br>

@@ -6,6 +6,8 @@ import { map } from 'rxjs/operators'
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Router } from '@angular/router';
 import * as _ from 'lodash';
+import { ModalController } from '@ionic/angular';
+import { ProjetoSalvarComponent } from '../projeto-salvar/projeto-salvar.component';
 
 @Component({
   selector: 'app-projeto-listar',
@@ -22,7 +24,7 @@ export class ProjetoListarComponent implements OnInit {
 
 
 
-  constructor(private fire: AngularFireDatabase,private afAuth: AngularFireAuth, private router: Router ) {
+  constructor(private fire: AngularFireDatabase,private afAuth: AngularFireAuth, private router: Router, private modal: ModalController){
     this.listaProjetos = this.fire.list<Projeto>('projeto').snapshotChanges().pipe(
       map(lista => lista.map(linha => ({
         key: linha.payload.key, ...linha.payload.val()
@@ -57,6 +59,11 @@ export class ProjetoListarComponent implements OnInit {
 
   }
 
-
+async alterar(projeto){
+const tela = await this.modal.create({
+component: ProjetoSalvarComponent, componentProps : { projeto : projeto }
+});
+tela.present();
+}
 
 }
