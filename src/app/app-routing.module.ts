@@ -25,6 +25,7 @@ const routes: Routes = [
   { path: 'projL', component: ProjetoListarComponent },
   { path: 'diariol', component: DiarioListarComponent },  { path: 'curso', loadChildren: './curso/salvar/salvar.module#SalvarPageModule' },
   { path: 'redefinir', loadChildren: './usuario/redefinir/redefinir.module#RedefinirPageModule' },
+  { path: 'relatorio', loadChildren: './diario/relatorio/relatorio.module#RelatorioPageModule' },
 
 ];
 

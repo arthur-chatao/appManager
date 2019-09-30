@@ -6,4 +6,5 @@ export class Projeto {
   duration: number;
   thoras: number;
   shoras: number;
+  emailResponse : string;
 }

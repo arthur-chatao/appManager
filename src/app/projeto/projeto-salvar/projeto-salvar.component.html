@@ -41,6 +41,13 @@
         <ion-label position="floating">Descriçao do Projeto</ion-label>
         <ion-textarea [(ngModel)]='projeto.descriProj' placeholder="Entre com a Descriçao do Projeto"></ion-textarea>
       </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Email do Responsavel</ion-label>
+        <ion-textarea [(ngModel)]='projeto.emailResponse' placeholder="Email do Professor ou Responsavel do Projeto"></ion-textarea>
+      </ion-item>
+
+
       <br>
       <ion-button expand="full" (click)='projSalvar()' color="dark"> Confirmar Projeto </ion-button>
     </ion-card-content>

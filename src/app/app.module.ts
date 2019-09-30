@@ -8,6 +8,10 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
+import { EmailComposer } from '@ionic-native/email-composer/ngx';
+
+
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -28,7 +32,6 @@ import { DiarioListarComponent } from './diario/diario-listar/diario-listar.comp
 import { AngularFireAuth } from 'angularfire2/auth';
 
 
-
 @NgModule({
   declarations: [AppComponent, ComponenteLogin, ProjetoSalvarComponent, UsuarioSalvarComponent, ComponenteConfirmar, DiarioSalvarComponent,
     ComponenteCadConfirm, ProjetoListarComponent, DiarioListarComponent],
@@ -45,6 +48,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
   providers: [
     StatusBar,
     SplashScreen,
+    EmailComposer,
     AngularFireAuth,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
