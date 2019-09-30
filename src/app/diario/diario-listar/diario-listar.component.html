@@ -9,19 +9,20 @@
 <ion-content>
 	<ion-card color="primary" *ngFor="let diario of listaDiario | async">
 		<ion-card-header>
-			<ion-card-title> Diario {{ diario.dentrada }}</ion-card-title>
+			<ion-card-title> Diario {{ diario.dentrada | date:  'dd/MM/yyyy' }}</ion-card-title>
 		</ion-card-header>
 		<ion-card-content>
 			<b> Informaçoes: </b>
 			<br>
 			<br>
-			<b>  Horario de Entrada </b> <u> {{ diario.hentrada }}</u>
-			<br>
-			<br>
-			<b>  Horario de Saida </b> <u> {{ diario.saida }}</u>
+			<b>  Horario de Entrada </b> <u> {{ diario.hentrada | date:  'HH : mm'  }}</u>
 			<br>
 			<br>
 			<b> Diario do dia:</b> <u> {{ diario.descricaoDia }}</u>
+			<br>
+			<b>  Horario de Saida </b> <u> {{ diario.saida | date:  'HH : mm' }}</u>
+			<br>
+			<br>
 			<br>
 			<ion-button color="danger" (click)='clicarSingle()'>
 				<ion-icon name="arrow-round-down"></ion-icon> Baixar Relatorio
@@ -49,11 +50,3 @@
 	<ion-button color="danger" href="diario"> Criar Diario </ion-button>
 	<ion-button color="medium" href="home"> Sair </ion-button>
 </ion-content>
-
-
-<ion-footer>
-
-</ion-footer>
-<p>
-	diario-listar works!
-</p>
