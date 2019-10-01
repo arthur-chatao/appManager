@@ -15,13 +15,13 @@
 			<b> Informaçoes: </b>
 			<br>
 			<br>
-			<b>  Horario de Entrada </b> <u> {{ diario.hentrada | date:  'HH : mm'  }}</u>
+			<b> Horario de Entrada </b> <u> {{ diario.hentrada | date:  'HH : mm'  }}</u>
 			<br>
 			<br>
 			<b> Diario do dia:</b> <u> {{ diario.descricaoDia }}</u>
 			<br>
 			<br>
-			<b>  Horario de Saida </b> <u> {{ diario.saida | date:  'HH : mm' }}</u>
+			<b> Horario de Saida </b> <u> {{ diario.saida | date:  'HH : mm' }}</u>
 			<br>
 			<br>
 			<br>
@@ -33,9 +33,13 @@
 	<br>
 
 
-	<ion-button color="danger" (click)='clicarGeral()'>
-		<ion-icon name="arrow-round-down"></ion-icon> Gerar Relatorio Final
-	</ion-button>
-	<ion-button color="dark" href="projL"> Voltar aos Meus Projetos </ion-button>
-	<ion-button color="danger" href="diario"> Criar Diario </ion-button>
+
+
+		<ion-button color="danger" href="diario"> Criar Diario </ion-button>
+		<br>
+
+		<ion-button color="danger" (click)='clicarGeral()'>
+
+		<ion-icon name="arrow-round-down"></ion-icon> Gerar Relatorio Final</ion-button>
+		<ion-button color="dark" href="projL"> Voltar aos Meus Projetos </ion-button>
 </ion-content>

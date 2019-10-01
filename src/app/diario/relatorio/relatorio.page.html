@@ -5,5 +5,39 @@
 </ion-header>
 
 <ion-content>
-  <ion-button (click)="enviar()"> MANDA </ion-button>
-</ion-content>
+  <br>
+  <ion-content>
+    <ion-card color="primary" *ngFor="let diario of listaDiario | async">
+      <ion-card-header>
+        <ion-card-title> Diario {{ diario.dentrada | date:  'dd/MM/yyyy' }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <br>
+        <br>
+        <b> Diario do dia:</b> <u> {{ diario.descricaoDia }}</u>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </ion-card-content>
+    </ion-card>
+    <ion-card color="dark">
+      <ion-item color="dark">
+        <ion-label position="floating">Email para Envio</ion-label>
+        <ion-textarea placeholder="here.. " [(ngModel)]='email'></ion-textarea>
+      </ion-item>
+      <ion-button epand='full' (click)="enviar()"> Enviar para Responsavel </ion-button>
+    </ion-card>
+    <br>
+
+  </ion-content>
+
+  <ion-footer>
+    <ion-fab vertical="top" horizontal="end" edge slot="fixed">
+    <ion-fab-button href="diariol">
+      <ion-icon name="arrow-round-back"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  </ion-footer>
